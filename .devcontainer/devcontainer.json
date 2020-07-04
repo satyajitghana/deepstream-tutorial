@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.122.1/containers/docker-existing-dockerfile
+{
+	"name": "Existing Dockerfile",
+	"context": "..",
+	"dockerFile": "../Dockerfile",
+	"settings": {
+		"terminal.integrated.shell.linux": null
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Uncomment the next line to run commands after the container is created - for example installing curl.
+	// "postCreateCommand": "apt-get update && apt-get install -y curl",
+	"runArgs": [
+		"--gpus=0",
+		"--net=host",
+		"--env=DISPLAY",
+		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+		"--shm-size=1g",
+		"--memory=4g",
+		"--device=/dev/snd"
+	]
+}

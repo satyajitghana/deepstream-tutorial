@@ -1,0 +1,10 @@
+###############################################################################
+
+[message-broker]
+password = guest
+#optional
+hostname = localhost
+username = guest
+port = 5672
+exchange = amq.topic
+topic = topicname
