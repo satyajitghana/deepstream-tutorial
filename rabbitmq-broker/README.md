@@ -95,3 +95,11 @@ Run the app
 ```bash
 ./deepstream-test5-app -c configs/test5_config_file_src_infer.txt
 ```
+
+## RESULTS
+
+![1](screenshots/1.png)
+
+![2](screenshots/2.png)
+
+![3](screenshots/3.png)
