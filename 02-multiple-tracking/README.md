@@ -4,6 +4,8 @@ This example uses multiple inferencing, first uses primary 4 class detector, the
 
 `filesrc→ decode→ nvstreammux→ nvinfer (primary detector)→ nvtracker→ nvinfer (secondary classifier)→ nvdsosd → renderer`
 
+gie: gpu inferencing enginer
+
 For reference, here are the config files used for this sample :
 1. The 4-class detector (referred to as pgie in this sample) uses
     dstest2_pgie_config.txt
